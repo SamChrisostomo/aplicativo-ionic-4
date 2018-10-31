@@ -11,7 +11,7 @@ import { Http } from '@angular/http';
 export class MovieProvider {
 
   private baseUrl = "https://api.themoviedb.org/3";
-  private apiKey = "?api_key=be9d661090ece698142093347f53b7ed";
+  private apiKey = "?api_key=";
 
   constructor(public http: Http) {
     console.log('Hello MovieProvider Provider');

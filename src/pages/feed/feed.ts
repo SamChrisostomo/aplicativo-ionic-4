@@ -25,7 +25,7 @@ export class FeedPage {
   }
 
   ionViewDidLoad() {
-    this.movieProvider.getLatestMovies().subscribe(
+    this.movieProvider.getLatestMovies("Avengers").subscribe(
       data=>{
         const response = (data as any);
         const objReturn = JSON.parse(response._body);

@@ -11,6 +11,7 @@ import { IntroPageModule } from '../pages/intro/intro.module';
 import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { SobrePageModule } from '../pages/sobre/sobre.module';
+import { FilmDetalhePageModule } from '../pages/film-detalhe/film-detalhe.module';
 
 //Providers
 import { MovieProvider } from '../providers/movie/movie';
@@ -34,6 +35,7 @@ import { HttpModule } from '@angular/http';
     ConfiguracoesPageModule,
     PerfilPageModule,
     SobrePageModule,
+    FilmDetalhePageModule,
     HttpModule
   ],
   bootstrap: [IonicApp],

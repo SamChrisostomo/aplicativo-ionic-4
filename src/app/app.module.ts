@@ -20,6 +20,7 @@ import { ConfigProvider } from '../providers/config/config';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
+import { CameraPageModule } from '../pages/camera/camera.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { HttpModule } from '@angular/http';
     PerfilPageModule,
     SobrePageModule,
     FilmDetalhePageModule,
+    CameraPageModule,
     HttpModule
   ],
   bootstrap: [IonicApp],

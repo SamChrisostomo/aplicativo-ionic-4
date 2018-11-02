@@ -1,8 +1,8 @@
 {
-  "name": "infofilmes",
-  "version": "1.0.0",
-  "author": "Samuel Crisóstomo",
-  "homepage": "http://materialgeek.ml",
+  "name": "myapp",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",

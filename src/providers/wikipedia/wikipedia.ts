@@ -10,7 +10,7 @@ import { Http } from '@angular/http';
 @Injectable()
 export class WikipediaProvider {
 
-  private dUrl = "https://pt.wikipedia.org/w/api.php?action=opensearch&search=os%20vingadores&format=xml&%20";
+  //private dUrl = "https://pt.wikipedia.org/w/api.php?action=opensearch&search=os%20vingadores&format=xml&%20";
 
   constructor(public http: Http) {
     console.log('Hello WikipediaProvider Provider');

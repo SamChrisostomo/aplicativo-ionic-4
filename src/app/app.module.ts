@@ -31,7 +31,6 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { WikipediaProvider } from '../providers/wikipedia/wikipedia';
 
 const config = {
-  apiKey: "AIzaSyDok5hbSwXtmtvbi-UzMblucZ3WLk2_-3k",
   authDomain: "material-geek.firebaseapp.com",
   databaseURL: "https://material-geek.firebaseio.com",
   projectId: "material-geek",

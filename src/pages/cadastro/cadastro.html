@@ -1,0 +1,38 @@
+<!--
+  Generated template for the CadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <!-- titulo da página -->
+    <ion-title>Criar conta</ion-title>
+    
+    <!--
+      Botão de fazer cadastro 
+    <ion-buttons end>
+      <button ion-button clear icon-only>
+        <ion-icon name="log-in"></ion-icon>
+      </button>  
+    </ion-buttons>
+    -->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <form (ngSubmit)="criarConta()">
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item margin-top>
+        <ion-label floating>Senha</ion-label>
+        <ion-input type="password" name="senha" [(ngModel)]="user.senha"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" margin-top float-right>
+        Criar Conta
+      </button>
+    </form>
+</ion-content>

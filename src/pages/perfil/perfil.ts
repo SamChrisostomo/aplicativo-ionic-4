@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PerfilPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
+import { AuthProvider } from '../../providers/auth/auth';
+import { LoginPage } from '../login/login';
 
 @IonicPage()
 @Component({
@@ -15,11 +10,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PerfilPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public toast = this.toastControl.create({ duration: 3000, position: 'bottom' });
+
+  constructor(
+    public navCtrl: NavController,
+    private toastControl: ToastController,
+    private authService: AuthProvider) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PerfilPage');
+  sair() {
+    this.authService.LogOut()
+      .then(() => {
+        this.toast.setMessage("Até a próxima!");
+        this.navCtrl.push(LoginPage);
+      })
+      .catch((error: any) => {
+        console.error(error);
+      });
   }
-
 }
